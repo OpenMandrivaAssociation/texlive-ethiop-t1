@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/ps-type1/ethiop
+# catalog-date 2007-02-14 08:57:40 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-ethiop-t1
 Version:	20070214
 Release:	1
@@ -82,6 +88,7 @@ of the ethiop package.
 %{_texmfdistdir}/fonts/type1/public/ethiop-t1/ethbtt10.pfb
 %doc %{_texmfdistdir}/doc/latex/ethiop-t1/COPYING
 %doc %{_texmfdistdir}/doc/latex/ethiop-t1/README
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -92,3 +99,5 @@ of the ethiop package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
