@@ -89,3 +89,17 @@ of the ethiop package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070214-2
++ Revision: 751641
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070214-1
++ Revision: 718379
+- texlive-ethiop-t1
+- texlive-ethiop-t1
+- texlive-ethiop-t1
+- texlive-ethiop-t1
+
