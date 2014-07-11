@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-ethiop-t1
 Version:	20070214
-Release:	7
+Release:	8
 Summary:	Type 1 versions of Amharic fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ps-type1/ethiop
