@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-ethiop-t1
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Type 1 versions of Amharic fonts
 Group:		Publishing
