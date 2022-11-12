@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /fonts/ps-type1/ethiop
-# catalog-date 2007-02-14 08:57:40 +0100
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-ethiop-t1
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Type 1 versions of Amharic fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ps-type1/ethiop
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ethiop-t1.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ethiop-t1.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ethiop-t1.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ethiop-t1.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ These fonts are drop-in Adobe type 1 replacements for the fonts
 of the ethiop package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -82,24 +76,10 @@ of the ethiop package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070214-2
-+ Revision: 751641
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070214-1
-+ Revision: 718379
-- texlive-ethiop-t1
-- texlive-ethiop-t1
-- texlive-ethiop-t1
-- texlive-ethiop-t1
-
