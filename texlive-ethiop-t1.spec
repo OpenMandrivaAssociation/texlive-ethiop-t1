@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Type 1 versions of Amharic fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/ps-type1/ethiop
+URL:		https://www.ctan.org/tex-archive/fonts/ps-type1/ethiop
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ethiop-t1.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ethiop-t1.doc.r%{version}.tar.xz
